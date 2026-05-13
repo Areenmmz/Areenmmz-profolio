@@ -1645,3 +1645,41 @@ section.animate {
         font-size: 0.85rem; /* ↑ increase text inside buttons */
     }
 }
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    cursor: pointer !important;
+    z-index: 3000 !important;
+    width: 30px !important;
+    height: 25px !important;
+  }
+
+  .hamburger span {
+    display: block !important;
+    width: 25px !important;
+    height: 3px !important;
+    background-color: var(--text-color) !important;
+    border-radius: 10px !important;
+  }
+
+  .nav-menu {
+    z-index: 2500 !important;
+  }
+
+  .nav-menu a,
+  .cta-button,
+  .cv-button,
+  .contact-item a,
+  .footer-links a {
+    pointer-events: auto !important;
+    position: relative !important;
+    z-index: 20 !important;
+    cursor: pointer !important;
+  }
+}
+a, button {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
